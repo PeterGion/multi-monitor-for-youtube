@@ -1,0 +1,25 @@
+{
+    "name": "Multi Monitor for Youtube",
+    "description": "allows you to add a video to the queue from another window",
+    "version": "1.0",
+    "host_permissions": ["<all_urls>"],
+
+    "action": {
+      "default_title": "multi monitor for youtube",
+      "default_popup":"popup.html"
+    },
+    "oauth2": {
+      "client_id": "214284518219-3ceoelo5t0l7r5d68runqs97g3tji3uh.apps.googleusercontent.com",
+      "scopes": [
+        "https://www.googleapis.com/auth/youtube.force-ssl",
+        "https://www.googleapis.com/auth/youtubepartner",
+        "https://www.googleapis.com/auth/youtube"
+      ]
+    },
+    "permissions": ["identity","scripting", "activeTab", "storage"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    
+     "manifest_version": 3
+}
